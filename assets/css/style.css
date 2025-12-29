@@ -33,10 +33,32 @@ body {
     height: 70px;
 }
 
+.header-row {
+  display: flex;
+  align-items: center;        /* CRITICAL */
+  justify-content: space-between;
+  height: 70px;               /* LOCK HEIGHT */
+}
+
+/* LEFT SIDE */
+.left-header {
+  display: flex;
+  align-items: center;      /* KEY */
+  gap: 10px;
+}
+
 .logo {
     height: 45px;
 }
-
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav {
+  display: flex;
+  gap: 25px;
+}
 .nav a {
     margin: 0 15px;
     text-decoration: none;
@@ -48,6 +70,23 @@ body {
 .nav a:hover {
     color: green;
 }
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+
 /* Clinic name */
 .clinic-name {
     margin: 0;
@@ -88,7 +127,15 @@ body {
     }
 
     .nav {
-        margin: 10px 0;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        display: none;
+        padding: 15px 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     }
 
     .hero {
@@ -103,6 +150,22 @@ body {
 
     .service-grid {
         grid-template-columns: 1fr;
+    }
+    .nav a {
+        padding: 12px 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .desktop-only {
+        display: none;
     }
 }
 
@@ -199,6 +262,43 @@ body {
   .hero-content {
     left: 5%;
   }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    border-top: 1px solid #eee;
+  }
+}
+
+/* X ANIMATION */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(9px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9px);
+}
+
+/* NAV */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+}
+
+.mobile-nav.show {
+  display: flex;
+}
+
+.mobile-nav a {
+  padding: 14px 20px;
+  border-bottom: 1px solid #eee;
 }
 
 

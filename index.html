@@ -25,19 +25,24 @@
   <!-- https://preview.themeforest.net/item/dentist-wp-dental-wordpress-theme/full_screen_preview/20484354x` -->
     <!-- ================= HEADER ================= -->
     <header class="header">
-        <div class="container header-flex">
-            <div class="brand">
+        <div class="container header-row">
+            <div class="brand logo-wrap">
                 <img src="assets/images/logo.png" alt="Dr. Rushabh's Clinic" class="logo">
                 <h3 class="clinic-name">Dr. Rushabh's Clinic</h3>
             </div>
-            <nav class="nav">
+             <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+           </div>
+            <nav class="nav" id="mobileMenu">
                 <a href="index.html" class="active">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#appointment">Contact</a>
             </nav>
 
-            <a href="contact.html" class="btn-primary">Book Appointment</a>
+            <a href="contact.html" class="btn-primary desktop-only">Book Appointment</a>
         </div>
     </header>
 
@@ -502,6 +507,13 @@
     </script>
 
     <script src="assets/js/main.js"></script>
+
+    <script>
+        function toggleMenu() {
+        document.getElementById("mobileMenu").classList.toggle("show");
+        }
+    </script>
+
 </body>
 
 </html>
