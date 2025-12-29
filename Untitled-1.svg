@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     fill="none">
+
+  <!-- Teeth outline -->
+  <path d="M16 6C12 6 10 10 10 16V26
+           C10 36 14 48 20 56
+           C22 58 26 58 28 54
+           L32 44L36 54
+           C38 58 42 58 44 56
+           C50 48 54 36 54 26V16
+           C54 10 52 6 48 6Z"
+        fill="#546E7A"/>
+
+  <!-- Braces wire -->
+  
+
+  <!-- Brackets -->
+  
+</svg>

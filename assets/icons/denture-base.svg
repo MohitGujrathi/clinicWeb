@@ -1,0 +1,44 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 64 64"
+     width="70px"
+     height="70px" 
+     fill="none">
+
+  <!-- Upper denture base -->
+  <path d="M12 18
+           C12 10 52 10 52 18
+           C52 26 44 30 32 30
+           C20 30 12 26 12 18Z"
+        fill="#546E7A"/>
+
+  <!-- Teeth impressions -->
+  <path d="M18 22
+           C18 20 22 20 22 22
+           C22 24 18 24 18 22Z"
+        fill="#546E7A"/>
+  <path d="M24 23
+           C24 21 28 21 28 23
+           C28 25 24 25 24 23Z"
+        fill="#FFFFFF"/>
+  <path d="M30 23
+           C30 21 34 21 34 23
+           C34 25 30 25 30 23Z"
+        fill="#546E7A"/>
+  <path d="M36 23
+           C36 21 40 21 40 23
+           C40 25 36 25 36 23Z"
+        fill="#546E7A"/>
+  <path d="M42 22
+           C42 20 46 20 46 22
+           C46 24 42 24 42 22Z"
+        fill="#546E7A"/>
+
+  <!-- Lower denture base -->
+  <path d="M18 38
+           C18 44 46 44 46 38
+           C46 32 38 34 32 34
+           C26 34 18 32 18 38Z"
+        fill="#546E7A"/>
+
+</svg>
