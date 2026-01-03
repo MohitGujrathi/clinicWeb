@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dr. Rushabh's Clinic | Advanced Dental Care</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Dr. Rushabh's Clinic provides advanced dental treatments, cosmetic dentistry, and family dental care.">
+    <meta name="keywords" content="Dental Clinic, Dentist, Teeth, Smile Care">
+    <meta name="author" content="Dr. Rushabh's Clinic">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- https://happy-smiles.cmsmasters.studio/main/ -->
+    <!-- https://demo.awaikenthemes.com/primecare/demo3/services/ -->
+    <!-- https://preview.themeforest.net/item/dentist-wp-dental-wordpress-theme/full_screen_preview/20484354x` -->
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="container header-row">
+            <div class="brand logo-wrap">
+                <img src="assets/images/logo.png" alt="Dr. Rushabh's Clinic" class="logo">
+                <h3 class="clinic-name">Dr. Rushabh's Clinic</h3>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav" id="mobileMenu">
+                <a href="index.html" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#appointment">Contact</a>
+            </nav>
+
+            <a href="contact.html" class="btn-primary desktop-only">Book Appointment</a>
+        </div>
+    </header>
+
+    <!-- ===== PAGE TITLE ===== -->
+    <h1 class="page-title" id="serviceTitle">Orthodontic Treatment</h1>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="services-wrapper">
+
+        <!-- LEFT SIDE -->
+        <div class="service-details" id="serviceContent">
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="services-list">
+            <ul>
+                <li onclick="loadService('OrthodonticTreatment')">Orthodontic Treatment</li>
+                <li onclick="loadService('InvisalignTreatment')">Invisalign Treatment</li>
+                <li onclick="loadService('SurgicalDisimpaction')">Surgical Disimpaction</li>
+                <li onclick="loadService('ToothExtraction')">Tooth Extraction</li>
+                <li onclick="loadService('RootCanal')">Root Canal</li>
+                <li onclick="loadService('DentureBase')">Denture Base</li>
+                <li onclick="loadService('CrownandBridges')">Crown and Bridges</li>
+                <li onclick="loadService('CavityFilling')">Cavity Filling</li>
+                <li onclick="loadService('TeethCleaning')">Teeth Cleaning</li>
+                <li onclick="loadService('TeethWhitning')">Teeth Whitning</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script>
+        const services = {
+            OrthodonticTreatment: {
+                title: "Orthodontic (Braces) Treatment",
+                image: "assets/images/service-Braces.jpg",
+                sections: [
+                    {
+                        title: "What is Braces Treatment?",
+                        content: "Braces treatment is an orthodontic procedure used to correct misaligned teeth and jaw positioning. Braces apply gentle, continuous pressure to gradually move teeth into their correct position. This not only improves the appearance of your smile but also enhances oral function, bite alignment, and long-term dental health."
+                    },
+                    {
+                        title: "Who Needs Braces Treatment?",
+                        content: "Braces treatment is recommended for individuals who experience:",
+                        points: [
+                            "Crooked or crowded teeth",
+                            "Gaps or spacing between teeth",
+                            "Overbite, underbite, or crossbite",
+                            "Jaw misalignment or bite issues",
+                            "Difficulty in chewing or speaking properly",
+                            "Early orthodontic problems in children"
+                        ],
+                        footer: "Braces are suitable for children, teenagers, and adults. Early intervention in children can prevent complex problems later, while adults can achieve excellent results at any age."
+                    },
+                    {
+                        title: "Benefits of Braces Treatment",
+                        points: [
+                            "Improves smile aesthetics and confidence",
+                            "Corrects bite and jaw alignment",
+                            "Enhances chewing and speech function",
+                            "Reduces risk of tooth decay and gum disease",
+                            "Prevents abnormal tooth wear",
+                            "Long-lasting orthodontic correction"
+                        ],
+                        footer: "A properly aligned smile is easier to clean and maintain, contributing to better oral health for life."
+                    },
+                    {
+                        title: "Types of Braces",
+                        content: "Modern orthodontics offers multiple treatment options based on individual needs:",
+                        points: [
+                            "Metal Braces :Traditional braces made of high-grade stainless steel. Strong, effective, and suitable for all age groups.",
+                            "Ceramic Braces :Tooth-colored braces that blend with natural teeth for a more discreet appearance.",
+                            "Self-Ligating Braces :Advanced braces that reduce friction, offer faster treatment, and require fewer clinic visits.",
+                        ]
+                    },
+                    {
+                        title: "Our Approach",
+                        content: "At Dr. Rushabh’s Dental Care & Orthodontic Centre, we create customized orthodontic treatment plans using advanced technology and evidence-based practices to ensure comfort, precision, and lasting results."
+                    }
+                ]
+            },
+            InvisalignTreatment: {
+                title: "Invisalign Treatment",
+                image: "assets/images/invisalign.png",
+                sections: [
+                    {
+                        title: "What is Invisalign Treatment?",
+                        content: "Invisalign treatment is a modern orthodontic solution that uses a series of clear, removable aligners to straighten teeth gradually. These aligners are custom-made using advanced 3D imaging technology and are designed to fit comfortably over your teeth, making them nearly invisible while wearing."
+                    },
+                    {
+                        title: "Who Needs Invisalign Treatment?",
+                        content: "Invisalign treatment is ideal for individuals who want a discreet and comfortable way to correct dental alignment issues, including:",
+                        points: [
+                            "Mild to moderate crooked or crowded teeth",
+                            "Gaps or spacing between teeth",
+                            "Overbite, underbite, or crossbite",
+                            "Relapse after previous braces treatment",
+                            "Professionals or adults seeking a less noticeable option",
+                            "Teenagers who prefer removable aligners"
+                        ],
+                        footer: "Invisalign is suitable for teenagers and adults. A consultation with an orthodontist is essential to determine whether Invisalign is the right choice based on the complexity of your dental condition."
+                    },
+                    {
+                        title: "Benefits of Invisalign Treatment",
+                        content: "Invisalign offers several advantages over traditional braces, making it a popular choice among patients:",
+                        points: [
+                            "Virtually invisible aligners for a confident smile",
+                            "Removable aligners allow easy eating and cleaning",
+                            "No food restrictions during treatment",
+                            "Improved comfort with no metal brackets or wires",
+                            "Fewer clinic visits compared to traditional braces",
+                            "Predictable results with digital treatment planning"
+                        ],
+                        footer: "With proper wear and regular follow-ups, Invisalign can deliver excellent and long-lasting results while fitting seamlessly into your lifestyle."
+                    },
+                    {
+                        title: "Precautions During Invisalign Treatment",
+                        content: "To achieve the best results with Invisalign, patients should follow these important precautions:",
+                        points: [
+                            "Wear aligners for 20–22 hours per day",
+                            "Remove aligners while eating or drinking anything except water",
+                            "Clean aligners regularly to prevent staining and odor",
+                            "Avoid hot beverages while wearing aligners",
+                            "Switch to new aligners as instructed by your orthodontist",
+                            "Attend scheduled follow-up appointments"
+                        ],
+                        footer: "Following these precautions ensures effective tooth movement and helps maintain oral hygiene throughout the treatment period."
+                    },
+                    {
+                        title: "Our Approach to Invisalign Treatment",
+                        content: "Our Invisalign treatment approach focuses on precision, comfort, and personalized care. We begin with a detailed assessment of your teeth and bite using advanced digital scanning technology to create an accurate 3D treatment plan. This allows us to design custom clear aligners that gradually and effectively move your teeth into proper alignment. Throughout the treatment, we closely monitor your progress with regular check-ups to ensure optimal results and make adjustments when required. Once treatment is complete, we provide customized retainers and long-term guidance to help maintain your new smile, ensuring lasting alignment and confidence."
+                    }
+
+                ]
+            },
+            SurgicalDisimpaction: {
+                title: "Surgical Disimpaction",
+                image: "assets/images/surgicaldisimpaction.png",
+                sections: [
+                    {
+                        title: "What is Surgical Disimpaction?",
+                        content: "Surgical disimpaction is a minor oral surgical procedure used to expose a tooth that is trapped inside the jawbone or gum and unable to erupt naturally. This most commonly involves impacted teeth such as canines or wisdom teeth. Once exposed, the tooth can either be guided into proper position with orthodontic treatment or removed if required.",
+                    },
+                    {
+                        title: "Who Needs Surgical Disimpaction?",
+                        content: "Surgical disimpaction is recommended for individuals who experience:",
+                        points: [
+                            "Teeth that have not erupted even after the normal age",
+                            "Impacted canines or wisdom teeth",
+                            "Teeth blocked by overcrowding or abnormal growth",
+                            "Pain, swelling, or infection around impacted teeth",
+                            "Orthodontic treatment requiring exposure of a buried tooth",
+                            "Orthodontic treatment requiring exposure of a buried tooth"
+                        ]
+                    },
+                    {
+                        title: "Benefits of Surgical Disimpaction",
+                        points: [
+                            "Allows impacted teeth to erupt properly",
+                            "Prevents damage to adjacent teeth",
+                            "Reduces pain, infection, and cyst formation",
+                            "Supports successful orthodontic treatment",
+                            "Improves bite function and aesthetics",
+                            "Prevents long-term jaw and gum complications"
+                        ]
+                    },
+                    {
+                        title: "Aftercare & Precautions",
+                        points: [
+                            "Maintain oral hygiene as advised",
+                            "Avoid hard or spicy foods for a few days",
+                            "Take prescribed medications on time",
+                            "Apply cold compress to reduce swelling",
+                            "Attend follow-up visits for proper healing"
+                        ]
+                    },
+                    {
+                        title: "Who Can Undergo This Treatment?",
+                        content: "Surgical disimpaction is suitable for children, teenagers, and adults, especially those undergoing orthodontic treatment. Early intervention often leads to simpler and more effective results."
+                    },
+                    {
+                        title: "Our Approach",
+                        content: "Our surgical disimpaction procedure is performed with precision, comfort, and safety as top priorities. Using advanced diagnostic imaging, we carefully plan the procedure to minimize discomfort and ensure optimal results. The surgery is carried out under local anesthesia with strict sterilization protocols, followed by clear post-operative care instructions to promote quick healing and successful orthodontic outcomes."
+                    }
+                ]
+            },
+            ToothExtraction: {
+                title: "Tooth Extraction",
+                image: "assets/images/toothextraction.png",
+                sections: [
+                    {
+                        title: "What is Tooth Extraction?",
+                        content:
+                            "Tooth extraction is a dental procedure in which a tooth is carefully removed from its socket in the jawbone. This procedure is recommended when a tooth is severely damaged, decayed, infected, or causing alignment and oral health issues. With modern techniques, tooth extraction is safe, precise, and comfortable."
+                    },
+                    {
+                        title: "Who Needs Tooth Extraction?",
+                        content: "Tooth extraction may be recommended for individuals who experience:",
+                        points: [
+                            "Severe tooth decay or infection",
+                            "Advanced gum disease affecting tooth stability",
+                            "Impacted or partially erupted wisdom teeth",
+                            "Overcrowding before orthodontic treatment",
+                            "Broken or fractured teeth beyond repair",
+                            "Persistent pain or swelling around a tooth"
+                        ]
+                    },
+                    {
+                        title: "Benefits of Tooth Extraction",
+                        points: [
+                            "Relieves pain and eliminates infection",
+                            "Prevents damage to surrounding teeth",
+                            "Improves overall oral health",
+                            "Creates space for orthodontic alignment",
+                            "Reduces risk of jawbone and gum complications",
+                            "Supports long-term dental health"
+                        ]
+                    },
+                    {
+                        title: "Aftercare & Precautions",
+                        points: [
+                            "Avoid chewing on the extraction site for 24 hours",
+                            "Do not rinse or spit forcefully on the first day",
+                            "Apply ice packs to reduce swelling",
+                            "Take prescribed medications as directed",
+                            "Maintain oral hygiene while avoiding the surgical area",
+                            "Attend follow-up appointments if advised"
+                        ],
+                        footer:
+                            "With proper aftercare, healing is usually quick and complications are minimal."
+                    },
+                    {
+                        title: "Our Approach",
+                        content:
+                            "At our clinic, tooth extractions are performed with a strong focus on patient comfort and safety. We conduct a detailed examination and digital imaging before treatment. The procedure is carried out using local anesthesia and gentle techniques to minimize discomfort, followed by clear post-treatment guidance for quick healing."
+                    }
+                ]
+            },
+            RootCanal: {
+                title: "Root Canal",
+                image: "assets/icons/root_canal.svg",
+                sections: [
+                    {
+                        title: "What is Root Canal Treatment?",
+                        content:
+                            "Root canal treatment is a dental procedure used to save a severely infected or damaged tooth by removing the infected pulp from inside the tooth. The tooth is then thoroughly cleaned, disinfected, and sealed to prevent further infection. This procedure helps relieve pain while preserving your natural tooth structure."
+                    },
+                    {
+                        title: "Who Needs Root Canal Treatment?",
+                        content: "Root canal treatment may be recommended if you experience:",
+                        points: [
+                            "Severe toothache or persistent pain",
+                            "Sensitivity to hot or cold that lasts long",
+                            "Swelling or tenderness around the gums",
+                            "Darkening or discoloration of a tooth",
+                            "Deep decay reaching the tooth pulp",
+                            "Dental abscess or pus formation"
+                        ]
+                    },
+                    {
+                        title: "Benefits of Root Canal Treatment",
+                        points: [
+                            "Relieves severe tooth pain and discomfort",
+                            "Saves the natural tooth from extraction",
+                            "Prevents spread of infection",
+                            "Restores normal chewing and biting function",
+                            "Maintains proper alignment of surrounding teeth",
+                            "Improves long-term oral health"
+                        ]
+                    },
+                    {
+                        title: "Aftercare & Precautions",
+                        points: [
+                            "Avoid chewing on the treated tooth until fully restored",
+                            "Maintain good oral hygiene with gentle brushing",
+                            "Take prescribed medications as advised",
+                            "Avoid very hard or sticky foods initially",
+                            "Attend follow-up visits for crown placement if required",
+                            "Contact the clinic if pain or swelling persists"
+                        ],
+                        footer:
+                            "With proper care and restoration, a root canal–treated tooth can last a lifetime."
+                    },
+                    {
+                        title: "Our Approach",
+                        content:
+                            "Our approach to root canal treatment focuses on precision, safety, and patient comfort. We use advanced diagnostic tools and modern rotary instruments to ensure thorough cleaning and effective sealing of the tooth. The procedure is performed under local anesthesia, followed by proper restoration to strengthen the treated tooth and ensure long-lasting results."
+                    }
+                ]
+            },
+            DentureBase: {
+                title: "Denture Base",
+                image: "assets/images/DentureBase.png",
+                sections: [
+                    {
+                        title: "What is a Denture Base?",
+                        content:
+                            "A denture base is the part of a dental prosthesis that rests directly on the gums and supports artificial teeth. It is designed to replace missing teeth and surrounding tissues, restoring both function and appearance. Denture bases are custom-made to fit comfortably and blend naturally with your smile."
+                    },
+                    {
+                        title: "Who Needs a Denture Base?",
+                        content: "Denture bases are recommended for individuals who:",
+                        points: [
+                            "Have lost one or more teeth",
+                            "Experience difficulty in chewing or speaking",
+                            "Have multiple missing teeth in the upper or lower jaw",
+                            "Are not suitable candidates for dental implants",
+                            "Want a removable or fixed tooth replacement option",
+                            "Need full or partial dentures"
+                        ]
+                    },
+                    {
+                        title: "Benefits of Denture Base Treatment",
+                        points: [
+                            "Restores chewing and speaking ability",
+                            "Improves facial structure and appearance",
+                            "Prevents sagging of facial muscles",
+                            "Provides a cost-effective tooth replacement option",
+                            "Custom-designed for comfort and stability",
+                            "Enhances confidence and smile aesthetics"
+                        ]
+                    },
+                    {
+                        title: "Types of Denture Bases",
+                        points: [
+                            "Acrylic Denture Base",
+                            "Flexible Denture Base",
+                            "Metal Framework Denture Base",
+                            "Complete Denture Base",
+                            "Partial Denture Base"
+                        ]
+                    },
+                    {
+                        title: "Aftercare & Precautions",
+                        points: [
+                            "Clean dentures daily using recommended products",
+                            "Remove dentures at night to allow gum rest",
+                            "Handle dentures carefully to avoid damage",
+                            "Maintain regular oral hygiene of gums and remaining teeth",
+                            "Visit the dentist for periodic adjustments",
+                            "Avoid very hard or sticky foods initially"
+                        ],
+                        footer:
+                            "With proper care and regular dental checkups, denture bases can provide reliable comfort and functionality for many years."
+                    },
+                    {
+                        title: "Our Approach",
+                        content:
+                            "Our approach to denture base treatment focuses on precise customization and patient comfort. We use high-quality materials and advanced fabrication techniques to ensure proper fit, durability, and natural appearance. Each denture is carefully adjusted to provide stability, ease of use, and long-term satisfaction."
+                    }
+                ]
+            },
+            CrownandBridges: {
+                title: "Crown and Bridges",
+                image: "assets/images/crown_bridges.png",
+                sections: [
+                    {
+                        title: "What are Crowns and Bridges?",
+                        content:
+                            "Dental crowns and bridges are restorative treatments used to repair damaged teeth and replace missing teeth. A crown covers and protects a weakened or broken tooth, while a bridge fills the gap created by one or more missing teeth by anchoring artificial teeth to adjacent natural teeth or implants."
+                    },
+                    {
+                        title: "Who Needs Crowns and Bridges?",
+                        content: "Crowns and bridges are recommended for individuals who:",
+                        points: [
+                            "Have severely damaged or decayed teeth",
+                            "Have cracked, fractured, or worn-down teeth",
+                            "Have one or more missing teeth",
+                            "Have undergone root canal treatment and need tooth protection",
+                            "Want to restore chewing efficiency and speech clarity",
+                            "Wish to improve the appearance of their smile"
+                        ]
+                    },
+                    {
+                        title: "Benefits of Crowns and Bridges",
+                        points: [
+                            "Restores strength and function of damaged teeth",
+                            "Replaces missing teeth effectively",
+                            "Improves chewing and speaking ability",
+                            "Enhances smile aesthetics",
+                            "Prevents shifting of adjacent teeth",
+                            "Provides long-lasting and durable results"
+                        ]
+                    },
+                    {
+                        title: "Types of Crowns and Bridges",
+                        points: [
+                            "Metal Crowns",
+                            "Porcelain-Fused-to-Metal (PFM) Crowns",
+                            "All-Ceramic or Zirconia Crowns",
+                            "Traditional Dental Bridges",
+                            "Cantilever Bridges",
+                            "Implant-Supported Bridges"
+                        ]
+                    },
+                    {
+                        title: "Aftercare & Precautions",
+                        points: [
+                            "Maintain good oral hygiene with regular brushing and flossing",
+                            "Avoid chewing very hard foods or ice",
+                            "Use a night guard if you grind your teeth",
+                            "Attend regular dental checkups",
+                            "Clean around the crown or bridge carefully",
+                            "Report any discomfort or loosening immediately"
+                        ]
+                    },
+                    {
+                        title: "Our Approach",
+                        content:
+                            "Our approach to crowns and bridges focuses on precision, durability, and natural aesthetics. We use advanced digital planning and high-quality materials to design restorations that blend seamlessly with your natural teeth. Each crown and bridge is custom-crafted to ensure a comfortable fit, long-term strength, and a confident, natural-looking smile."
+                    }
+                ]
+            },
+            DentalInplants: {
+                title: "Dental Inplants",
+                image: "assets/images/inplant.png",
+                sections: [
+                    {
+                        title: "What are Dental Implants?",
+                        content:
+                            "Dental implants are a permanent and advanced solution for replacing missing teeth. They consist of a titanium post that is surgically placed into the jawbone, acting as an artificial tooth root, and a crown placed on top to restore natural appearance and function."
+                    },
+                    {
+                        title: "Who Needs Dental Implants?",
+                        content: "Dental implants are recommended for individuals who:",
+                        points: [
+                            "Have one or more missing teeth",
+                            "Want a long-term alternative to dentures or bridges",
+                            "Have sufficient jawbone density",
+                            "Experience difficulty with chewing or speaking",
+                            "Seek a natural-looking tooth replacement",
+                            "Have healthy gums and overall good oral health"
+                        ]
+                    },
+                    {
+                        title: "Benefits of Dental Implants",
+                        points: [
+                            "Provides a permanent and stable tooth replacement",
+                            "Restores natural chewing and speaking function",
+                            "Prevents bone loss in the jaw",
+                            "Maintains facial structure and appearance",
+                            "Does not affect adjacent healthy teeth",
+                            "Offers excellent durability and longevity"
+                        ]
+                    },
+                    {
+                        title: "Types of Dental Implants",
+                        points: [
+                            "Single Tooth Implants",
+                            "Multiple Tooth Implants",
+                            "Full Mouth Implants",
+                            "Implant-Supported Bridges",
+                            "Implant-Supported Dentures"
+                        ]
+                    },
+                    {
+                        title: "Aftercare & Precautions",
+                        points: [
+                            "Maintain excellent oral hygiene",
+                            "Avoid smoking during the healing phase",
+                            "Follow post-surgical care instructions carefully",
+                            "Attend scheduled follow-up appointments",
+                            "Avoid hard or sticky foods initially",
+                            "Report any pain or swelling promptly"
+                        ]
+                    },
+                    {
+                        title: "Our Approach",
+                        content:
+                            "Our approach to dental implant treatment emphasizes precision, safety, and long-term success. Using advanced imaging and digital planning, we ensure accurate implant placement and optimal integration with the jawbone. We focus on minimally invasive techniques, patient comfort, and customized restorations to deliver strong, natural-looking, and long-lasting results."
+                    }
+                ]
+            },
+            CavityFilling: {
+                title: "Cavity Filling",
+                image: "assets/images/cavityfilling.png",
+                sections: [
+                    {
+                        title: "What is Cavity Filling?",
+                        content:
+                            "Cavity filling is a common dental procedure used to restore teeth damaged by decay. When a cavity forms due to plaque and bacteria, the decayed portion of the tooth is carefully removed and replaced with a filling material. This helps restore the tooth’s shape, strength, and function while preventing further decay."
+                    },
+                    {
+                        title: "Who Needs Cavity Filling?",
+                        content:
+                            "Cavity fillings are recommended for individuals who experience tooth decay, sensitivity, or minor tooth damage. Early treatment of cavities prevents infection from spreading deeper into the tooth and helps avoid more complex procedures such as root canal treatment or tooth extraction.",
+                        points: [
+                            "Visible holes or dark spots on teeth",
+                            "Tooth sensitivity to hot, cold, or sweet foods",
+                            "Mild to moderate tooth pain",
+                            "Food getting stuck between teeth",
+                            "Early-stage tooth decay detected during dental checkups"
+                        ]
+                    },
+                    {
+                        title: "Benefits of Cavity Filling",
+                        content:
+                            "Dental fillings restore the natural function of your teeth and protect them from further damage. Modern filling materials are durable and blend naturally with your teeth, ensuring both strength and aesthetics.",
+                        points: [
+                            "Stops progression of tooth decay",
+                            "Relieves pain and sensitivity",
+                            "Restores tooth strength and chewing ability",
+                            "Improves appearance with tooth-colored fillings",
+                            "Preserves natural tooth structure"
+                        ]
+                    },
+                    {
+                        title: "Types of Dental Fillings",
+                        points: [
+                            "Composite (Tooth-Colored) Fillings",
+                            "Amalgam Fillings",
+                            "Ceramic Fillings",
+                            "Glass Ionomer Fillings"
+                        ]
+                    },
+                    {
+                        title: "Aftercare & Precautions",
+                        content:
+                            "After a cavity filling, maintaining good oral hygiene is essential to ensure long-lasting results. Some mild sensitivity is normal and usually subsides within a few days.",
+                        points: [
+                            "Avoid hard or sticky foods for the first 24 hours",
+                            "Brush and floss regularly",
+                            "Use a soft-bristled toothbrush",
+                            "Attend regular dental checkups",
+                            "Inform your dentist if sensitivity persists"
+                        ]
+                    },
+                    {
+                        title: "Our Approach",
+                        content:
+                            "Our approach to cavity filling focuses on early detection, gentle treatment, and long-term protection. We use advanced diagnostic tools and high-quality filling materials to ensure precise removal of decay while preserving maximum natural tooth structure. Patient comfort, safety, and aesthetic results are our top priorities."
+                    }
+                ]
+            },
+            TeethCleaning: {
+                title: "Teeth Cleaning",
+                image: "assets/images/teethcleaning.png",
+                sections: [
+                    {
+                        title: "What is Teeth Cleaning?",
+                        content:
+                            "Teeth cleaning, also known as oral prophylaxis, is a preventive dental procedure that removes plaque, tartar, and surface stains from teeth. Even with regular brushing and flossing, deposits can build up in hard-to-reach areas, leading to gum disease and tooth decay. Professional cleaning helps maintain healthy teeth and gums while keeping your smile fresh and bright."
+                    },
+                    {
+                        title: "Who Needs Teeth Cleaning?",
+                        content:
+                            "Teeth cleaning is essential for everyone, regardless of age. Regular cleanings help prevent dental problems and allow early detection of oral health issues before they become serious.",
+                        points: [
+                            "Individuals with plaque or tartar buildup",
+                            "People experiencing gum bleeding or bad breath",
+                            "Patients with stained teeth from tea, coffee, or smoking",
+                            "Those prone to gum disease or cavities",
+                            "Anyone seeking preventive oral care"
+                        ]
+                    },
+                    {
+                        title: "Benefits of Teeth Cleaning",
+                        content:
+                            "Routine teeth cleaning plays a vital role in maintaining overall oral health and preventing long-term dental complications.",
+                        points: [
+                            "Prevents gum disease and tooth decay",
+                            "Removes plaque and tartar buildup",
+                            "Improves breath freshness",
+                            "Enhances the natural appearance of teeth",
+                            "Reduces the risk of tooth loss"
+                        ]
+                    },
+                    {
+                        title: "Types of Teeth Cleaning Procedures",
+                        points: [
+                            "Routine Dental Cleaning",
+                            "Scaling and Polishing",
+                            "Deep Cleaning (Scaling and Root Planing)",
+                            "Stain Removal and Polishing"
+                        ]
+                    },
+                    {
+                        title: "Aftercare & Precautions",
+                        content:
+                            "After teeth cleaning, it is important to maintain good oral hygiene to prolong the benefits of the treatment. Some mild sensitivity or gum tenderness may occur temporarily.",
+                        points: [
+                            "Brush twice daily with fluoride toothpaste",
+                            "Floss regularly to remove plaque between teeth",
+                            "Avoid smoking and excessive staining foods",
+                            "Use a soft-bristled toothbrush",
+                            "Schedule regular dental checkups every six months"
+                        ]
+                    },
+                    {
+                        title: "Our Approach",
+                        content:
+                            "Our approach to teeth cleaning focuses on gentle care, thorough cleaning, and patient comfort. We use advanced tools and techniques to remove deposits safely and effectively while ensuring a comfortable experience. Each cleaning session is personalized to meet individual oral health needs and promote long-term dental wellness."
+                    }
+                ]
+            },
+            TeethWhitning: {
+                title: "Teeth Whitning",
+                image: "assets/images/tooth_whiting.png",
+                sections: [
+                    {
+                        title: "What is Teeth Whitening?",
+                        content:
+                            "Teeth whitening is a cosmetic dental procedure designed to lighten the color of teeth and remove stains caused by food, beverages, smoking, or aging. It enhances your smile by restoring your teeth’s natural brightness safely and effectively."
+                    },
+                    {
+                        title: "Who Needs Teeth Whitening?",
+                        content:
+                            "Teeth whitening is suitable for individuals who want a brighter smile and for those with surface stains or discoloration. It is ideal for adults looking to improve the aesthetics of their teeth, while maintaining overall oral health.",
+                        points: [
+                            "Yellowed or discolored teeth",
+                            "Stains from coffee, tea, wine, or smoking",
+                            "Teeth affected by aging or enamel wear",
+                            "Individuals preparing for special events or photos",
+                            "Anyone seeking a confident, radiant smile"
+                        ]
+                    },
+                    {
+                        title: "Benefits of Teeth Whitening",
+                        content:
+                            "Teeth whitening provides immediate cosmetic improvement and boosts confidence. Regular professional whitening ensures a safe and long-lasting effect compared to over-the-counter products.",
+                        points: [
+                            "Enhances smile aesthetics",
+                            "Boosts self-confidence",
+                            "Removes surface stains effectively",
+                            "Safe when performed by a professional",
+                            "Fast and visible results"
+                        ]
+                    },
+                    {
+                        title: "Types of Teeth Whitening Procedures",
+                        points: [
+                            "In-office professional whitening",
+                            "Take-home whitening kits",
+                            "Laser or LED-assisted whitening",
+                            "Combination treatments for stubborn stains"
+                        ]
+                    },
+                    {
+                        title: "Aftercare & Precautions",
+                        content:
+                            "To maintain whitening results, proper oral care and lifestyle habits are necessary. Mild sensitivity may occur temporarily after treatment.",
+                        points: [
+                            "Avoid stain-causing foods and beverages for 48 hours",
+                            "Maintain daily brushing and flossing",
+                            "Use whitening toothpaste to prolong results",
+                            "Regular dental checkups for monitoring",
+                            "Consult dentist for touch-ups if needed"
+                        ]
+                    },
+                    {
+                        title: "Our Approach",
+                        content:
+                            "Our approach to teeth whitening focuses on safe, customized treatments that suit each patient's dental condition and desired results. We prioritize comfort, minimal sensitivity, and effective whitening techniques to ensure a radiant and lasting smile."
+                    }
+                ]
+            }
+        };
+
+        function loadService(key) {
+            const service = services[key];
+            document.getElementById("serviceTitle").innerText = service.title;
+
+            const content = document.getElementById("serviceContent");
+
+            content.innerHTML = "";
+            content.innerHTML += `<img id="serviceImage" src='${service.image}' class="service-image" alt="Service Image">`
+            service.sections.forEach(section => {
+
+                let pointsHTML = "";
+                if (section.points) {
+                    pointsHTML = `
+            <ul class="service-points">
+            ${section.points.map(point => `<li>${point}</li>`).join("")}
+            </ul>
+        `;
+                }
+                let footerHTML = "";
+                if (section.footer) {
+                    footerHTML = `<p class="service-footer">${section.footer}</p>`;
+                }
+                let contents = ""
+                if (section.content) {
+                    contents = `<p>${section.content}</p> `
+                }
+                content.innerHTML += `            
+                <h3>${section.title}</h3>
+                ${contents}
+                ${pointsHTML}
+                ${footerHTML}           
+        `;
+            });
+
+        }
+
+        // Default load
+        loadService('OrthodonticTreatment');
+    </script>
+
+
+</body>
+
+</html>

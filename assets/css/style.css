@@ -4,6 +4,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+.services {
+    padding: 70px 0;
+    background: #f5f5f5;  /* Light gray background */
+}
+
+.about-section {
+    padding: 80px 0;
+    background: #f0f9f4;  /* Light green background */
+}
+
+.why-choose-us {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f0f9f4, #e0f2e9);
+    text-align: center;
+}
+
 
 body {
     font-family: "Segoe UI", sans-serif;
@@ -195,6 +211,8 @@ body {
 .hero-content h1 {
     font-size: 46px;
     margin-bottom: 15px;
+    color: #8BC800;
+
 }
 
 .hero-content p {
@@ -235,10 +253,10 @@ body {
   max-width: 450px;
 }
 
-.hero-content h1 {
+/* .hero-content h1 {
   font-size: 48px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; */
+/* } */
 
 .hero-content p {
   font-size: 18px;
@@ -247,8 +265,8 @@ body {
 
 .hero-btn {
   padding: 14px 30px;
-  background: #1976D2;
-  color: #fff;
+  background: #8BC800;
+  color: white;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
@@ -329,9 +347,9 @@ body {
     transform-style: preserve-3d;
 }
 
-.service-card:hover .card-inner {
+/* .service-card:hover .card-inner {
     transform: rotateY(180deg);
-}
+} */
 
 .card-front, .card-back {
     position: absolute;
@@ -409,6 +427,123 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+
+
+/* ===== PAGE TITLE ===== */
+        .page-title {
+            text-align: center;
+            font-size: 36px;
+            margin: 30px 0;
+            color: #1b5e20;
+        }
+
+        /* ===== LAYOUT ===== */
+        .services-wrapper {
+            display: flex;
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* ===== LEFT SIDE ===== */
+        .service-details {
+            flex: 3;
+        }
+
+        #serviceTitle {
+            font-size: 28px;
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+
+        .service-image {
+            width: 100%;
+            max-height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        #serviceDesc {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        #servicePrecautions li {
+            margin-left: 20px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        /* ===== RIGHT SIDE ===== */
+        .services-list {
+            flex: 1;
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+            background: #f1f8f4;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .services-list ul {
+          padding: 0;
+          list-style: none;
+        }
+       .services-list ul li {
+            position: relative;
+            padding-left: 10px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .services-list a {
+            display: block;
+            padding: 12px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #2e7d32;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .services-list a:hover,
+        .services-list a.active {
+            background: #2e7d32;
+            color: white;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .services-wrapper {
+                flex-direction: column;
+            }
+
+            .services-list {
+                position: relative;
+                top: 0;
+            }
+        }
+
+        .service-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: #2e7d32; /* green theme */
 }
 
 /* ====== WHY US ====== */
@@ -505,7 +640,7 @@ body {
 }
 
 .why-item h4 {
-  margin-bottom: 6px;
+  margin: 0;
   font-size: 18px;
 }
 
@@ -513,7 +648,6 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 6px;
 }
 
 .why-header img {
@@ -527,8 +661,8 @@ body {
   font-size: 18px;
 }
 .why-item p {
-  /* margin: 4px 0 0 46px; aligns text under title */
   font-size: 14px;
+  margin-top: 4px;
   color: #666;
   line-height: 1.5;
 }
@@ -642,6 +776,13 @@ body {
     height: 220px;
     margin: 30px 0;
   }
+  .services-page {
+    flex-direction: column;
+  }
+
+  .services-list {
+    position: static;
+  }
 }
 
 
@@ -754,4 +895,100 @@ body {
 .social-links a:hover {
     background: #005fa3;
     transform: translateY(-3px);
+}
+/* ===== SERVICE DETAILS CONTENT ===== */
+.service-details {
+    background: #f9fbfd;              /* soft light background */
+    /* padding: 0px 40px 40px 0px; */
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    margin-bottom: 40px;
+}
+
+/* Title */
+.service-details h3 {
+    font-size: 32px;
+    color: green;                     /* brand color */
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.service-details h3::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: green;
+    display: block;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+/* Paragraph */
+.service-details p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+}
+
+/* Optional emphasis text */
+.service-details strong {
+    color: #222;
+}
+
+/* Image block (if used later) */
+.service-details-image {
+    margin: 25px 0;
+}
+
+.service-details-image img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .service-details {
+        padding: 25px;
+    }
+
+    .service-details h3 {
+        font-size: 26px;
+    }
+
+    .service-details p {
+        font-size: 15px;
+    }
+}
+.service-details ul {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Each list item */
+.service-details ul li {
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Dental-style bullet icon */
+.service-details ul li::before {
+    content: "✔";
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+    left: 5px;
+    top: 10px;
+}
+
+/* Optional hover effect */
+.service-details ul li:hover {
+    color: green;
 }
